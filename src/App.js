@@ -14,8 +14,6 @@ function App() {
 
       <Header />
 
-      <h1>Aaaaaa</h1>
-
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/:movie' element={<Movie/>} />
