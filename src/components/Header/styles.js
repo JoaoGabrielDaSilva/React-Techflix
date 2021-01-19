@@ -6,6 +6,7 @@ export const Container = styled.div`
     align-items: center;
     height: 15vh;
     justify-content: space-between;
+    width: 100%;
 
     ul {
         margin-left: 10px; 
@@ -19,19 +20,16 @@ export const Container = styled.div`
     form {
         margin-right: 10px;
     }
-
-    img {
-        margin-left: 10px
-    }
 `
 
-export const Logo = styled.img`
+export const Logo = styled.div`
     border: 1px solid #fff;
     width: 20%;
     height: 100px;
     border-radius: 10px;
     min-width: 200px;
     max-width: 200px;
+    margin-left: 10px;
 `
 export const Movies = styled.ul`
     outline: none;
@@ -42,7 +40,7 @@ export const Movies = styled.ul`
     align-items: center;
     justify-content: center;
 `
-export const Series = styled.ul`
+export const Trending = styled.ul`
     outline: none;
     color: #fff;
     height: 100%;
