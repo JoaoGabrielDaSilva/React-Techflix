@@ -10,13 +10,30 @@ export const Container = styled.div`
 `
 export const MovieImage = styled.div`
     height: 70%;
-    background: red;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+
+    img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
 `
 export const MovieInfo = styled.div`
     height: 30%;
-    background: green;
+    background: #fff;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h3 {
+        margin-top: 10px;
+    }
+
+    h6 {
+        margin-bottom: 10px;
+    }
 `

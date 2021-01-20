@@ -6,11 +6,11 @@ const Card = React.FC = (info) => {
     return (
         <Container>
             <MovieImage>
-                <img src="" alt=""/>
+                <img src={info.image} alt=""/>
             </MovieImage>
             <MovieInfo>
                 <h3>{info.name}</h3>
-                <h6></h6>
+                <h6>{info.date}</h6>
             </MovieInfo>
         </Container>
     )
