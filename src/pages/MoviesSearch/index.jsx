@@ -9,17 +9,7 @@ const MoviesSearch = React.Fc = () => {
             <Main>
                 <List>
                     <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
+                    
                 </List>
             </Main>
         </Container>
