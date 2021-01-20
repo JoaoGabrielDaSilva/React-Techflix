@@ -1,8 +1,6 @@
 import React from 'react'
 import { Container, MovieImage, MovieInfo } from './styles'
 
-import MovieServices from '../../Services/MovieServices'
-
 const Card = React.FC = (info) => {
 
     return (
