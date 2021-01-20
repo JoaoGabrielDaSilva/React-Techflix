@@ -7,6 +7,18 @@ export const Container = styled.div`
     border-radius: 10px;
     margin: 15px;
     box-shadow: 0px 0px 15px #222;
+    
+    a {
+        text-decoration: none;
+        color: #222;
+    }
+
+    :hover {
+        transform: scale(1.05);
+        box-shadow: 0px 5px 15px #fff;
+        cursor: pointer;
+    }
+
 `
 export const MovieImage = styled.div`
     height: 70%;

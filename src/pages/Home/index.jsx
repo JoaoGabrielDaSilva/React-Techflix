@@ -44,13 +44,12 @@ const Home = React.FC = () => {
     }
 
     const request = FetchData()
-
     
     return (
         <Container>
             <Main>
                 <List>
-                    {request.map(item => <Card key={item.id} name={item.name} image={item.image} date={item.date}/>)}
+                    {request.map(item => <Card id={item.id} name={item.name} image={item.image} date={item.date}/>)}
                 </List>
             </Main>
         </Container>

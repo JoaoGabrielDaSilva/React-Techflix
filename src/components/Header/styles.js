@@ -23,31 +23,61 @@ export const Container = styled.div`
 `
 
 export const Logo = styled.div`
-    border: 1px solid #fff;
     width: 20%;
     height: 100px;
     border-radius: 10px;
     min-width: 200px;
     max-width: 200px;
     margin-left: 10px;
+
+    img {
+        height: 100%
+    }
+
 `
 export const Movies = styled.ul`
     outline: none;
-    color: #fff;
     height: 100%;
     width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+
+    li {
+        height: 100%;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-decoration: none;
+        color: #fff;
+    }
 `
 export const Trending = styled.ul`
     outline: none;
-    color: #fff;
     height: 100%;
     width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+
+    li {
+        height: 100%;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-decoration: none;
+        color: #fff;
+    }
 ` 
 export const Search = styled.form`
     padding-left: 30px;

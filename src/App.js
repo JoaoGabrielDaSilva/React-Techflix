@@ -17,9 +17,9 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Home/>} />
-        <Route path='/:movie' element={<Movie/>} />
+        <Route path='/movies' element={<Movie/>} />
         <Route path='/movies/search' element={<MoviesSearch/>} />
-        <Route path='/:movie/details' element={<MovieDetails/>} />
+        <Route path='/movie/details/:id' element={<MovieDetails/>} />
       </Routes>
 
       <GlobalStyles />
