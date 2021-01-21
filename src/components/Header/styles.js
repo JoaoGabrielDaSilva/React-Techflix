@@ -84,13 +84,36 @@ export const Search = styled.form`
     border-radius: 10px;
     height: 60%;
     width: 30%;
+    display: flex;
+    justify-content: space-around;
+
     input {
-        width: 100%;
+        width: 70%;
         border-radius: 10px;
         outline: none;
         height: 100%;
         border: 1px solid #fff;
         padding: 10px;
         color: #fff;
+    }
+
+    a {
+        text-decoration: none;
+        width: 20%;
+        height: 100%;
+    }
+
+    button {
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+    button:hover {
+        color: #222;
+        background: #fff;
+        cursor: pointer;
     }
 ` 

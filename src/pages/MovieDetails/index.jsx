@@ -12,9 +12,10 @@ const MovieDetails = React.FC = () => {
         const { id } = useParams()
         const [currentData, setData] = useState([])
 
-        useEffect(async () => {
+        useEffect(() => {
             const url = `https://api.themoviedb.org/3/movie/${id}?api_key=dfca496b57994b17cd605b1ed8862140`
-            await axios.get(url)
+            
+            axios.get(url)
             .then(response => {
                 const info = {
                     id: response.data.id,
@@ -26,8 +27,10 @@ const MovieDetails = React.FC = () => {
                 }
 
                 setData(info)
+                
             })
             .catch()
+            
         }, [])
         if (currentData) {
             return currentData
@@ -35,9 +38,6 @@ const MovieDetails = React.FC = () => {
     }
 
     const request = GetInfo()
-
-    console.log(request)
-
     return (
         <Container>
             <Main>

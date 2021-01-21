@@ -35,27 +35,3 @@ export default function DateHelper(date) {
     return formatedData
 
 }
-
-function formatDay(day) {
-
-    
-
-    // let formatedDay = null
-
-    // switch(day) {
-    //     case '01':
-    //         formatedDay = day += 'st'
-    //         break
-    //     case '02':
-    //         formatedDay = day += 'nd'
-    //         break
-    //     case '03':
-    //         formatedDay = day += 'rd'
-    //         break
-    //     default:
-    //         formatedDay = day += 'th'
-    //         break
-    // }
-
-    // return formatedDay
-}
