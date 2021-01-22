@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom'
 
 import logo from '../../Images/logo.png'
 
+import { FaBars } from 'react-icons/fa'
+
 
 const Header = (props) => {
 

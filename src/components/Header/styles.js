@@ -1,10 +1,5 @@
 import styled from 'styled-components'
 
-import { FaSearch } from "react-icons/fa"
-import { BiMovie } from 'react-icons/bi'
-import { FiTrendingUp } from 'react-icons/fi'
-
-
 export const Container = styled.div`
     background: #222;
     display: flex;

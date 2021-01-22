@@ -7,7 +7,7 @@ import dateHelper from '../Home/dateHelper'
 
 import Card from '../../components/Card/index'
 
-const Movie = React.FC = () => {
+const Movie = () => {
 
     function FetchData() {
 
