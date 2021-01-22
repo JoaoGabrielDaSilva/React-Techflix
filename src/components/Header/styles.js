@@ -4,33 +4,6 @@ import { FaSearch } from "react-icons/fa"
 import { BiMovie } from 'react-icons/bi'
 import { FiTrendingUp } from 'react-icons/fi'
 
-export const Buttons = styled.div`
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-`
-
-export const Icons = styled.div`
-    width: 100%;
-`
-
-export const SearchIcon = styled(FaSearch)`
-    color: #fff;
-    font-size: 30px;
-`
-
-export const MovieIcon = styled(BiMovie)`
-    color: #fff;
-    font-size: 30px;
-`
-
-export const TrendingIcon = styled(FiTrendingUp)`
-    color: #fff;
-    font-size: 30px;
-`
 
 export const Container = styled.div`
     background: #222;
@@ -68,8 +41,8 @@ export const Container = styled.div`
 `
 
 export const Logo = styled.div`
-    width: 20%;
-    height: 100px;
+    width: 10%;
+    height: 50%;
     border-radius: 10px;
     min-width: 200px;
     max-width: 200px;
@@ -105,11 +78,19 @@ export const Menu = styled.div`
         }
     }
 `
+export const Buttons = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+`
 
 export const Movies = styled.ul`
     outline: none;
     height: 100%;
-    width: 15%;
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,7 +112,7 @@ export const Movies = styled.ul`
 export const Trending = styled.ul`
     outline: none;
     height: 100%;
-    width: 15%;
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
