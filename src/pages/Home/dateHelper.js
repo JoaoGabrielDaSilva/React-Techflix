@@ -1,7 +1,7 @@
 export default function DateHelper(date) {
 
     if (!date) {
-        return ''
+        return '(data não encontrada)'
     }
 
     date = date.split('-')

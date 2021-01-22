@@ -24,7 +24,6 @@ const Home = () => {
                     data.sort((a, b) => a.vote_average - b.vote_average)
     
                     data.forEach(item => {
-
                         const info = {
                             id: item.id, 
                             name: item.original_title || item.original_name,

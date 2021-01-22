@@ -10,8 +10,6 @@ import { useLocation } from 'react-router-dom'
 const MoviesSearch = ( props ) => {
 
     const query = useLocation().search.toString().replace('?name=', '')
-    const [cardInfo, setCardInfo] = useState()
-    const cardArray = []
 
     function FetchData() {
 

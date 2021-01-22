@@ -1,6 +1,36 @@
 import styled from 'styled-components'
 
-import { FaBars } from "react-icons/fa"
+import { FaSearch } from "react-icons/fa"
+import { BiMovie } from 'react-icons/bi'
+import { FiTrendingUp } from 'react-icons/fi'
+
+export const Buttons = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+`
+
+export const Icons = styled.div`
+    width: 100%;
+`
+
+export const SearchIcon = styled(FaSearch)`
+    color: #fff;
+    font-size: 30px;
+`
+
+export const MovieIcon = styled(BiMovie)`
+    color: #fff;
+    font-size: 30px;
+`
+
+export const TrendingIcon = styled(FiTrendingUp)`
+    color: #fff;
+    font-size: 30px;
+`
 
 export const Container = styled.div`
     background: #222;
@@ -26,14 +56,15 @@ export const Container = styled.div`
     }
 
     form {
+        width: 50%;
         margin-right: 10px;
     }
 
     @media (max-width: 1120px) {
-
-        flex-direction: column;
+        .header {
+            margin: 0 auto;
     }
-
+    }
 `
 
 export const Logo = styled.div`
@@ -50,33 +81,35 @@ export const Logo = styled.div`
 `
 
 export const Menu = styled.div`
-    width: 80%;
+    width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+    z-index: 3;
+
+    @media (max-width: 1120px) {
+        width: 100%;
+        height: 10%;
+        background: #222;
+        position: fixed;
+        bottom: 0;
+        justify-content: space-around;
         
-    /* @media (max-width: 1120px) {
-
-        flex-direction: column;
-
-        ul, input {
-        position: absolute;
-        display: none;
-        } 
-
-        select {
-            display: initial;
-            margin-right: 20px;
+        .movies {
+            order: 3;
         }
-    } */
+
+        form {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+    }
 `
 
 export const Movies = styled.ul`
     outline: none;
     height: 100%;
-    width: 25%;
+    width: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,7 +131,7 @@ export const Movies = styled.ul`
 export const Trending = styled.ul`
     outline: none;
     height: 100%;
-    width: 25%;
+    width: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,10 +159,12 @@ export const Search = styled.form`
     align-items: center;
 
     input {
-        width: 30%;
+        width: 60%;
         border-radius: 10px 0px 0px 10px;
         outline: none;
         height: 40%;
+        max-height: 40px;
+        min-width: 100px;
         border: 1px solid #fff;
         padding: 10px;
         color: #fff;
@@ -141,24 +176,17 @@ export const Search = styled.form`
     }
 
     a {
-        max-height: 58px;
         text-decoration: none;
         width: 10%;
         height: 40%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     button {
+        padding: 3px;
         color: #fff;
         border: 1px solid #fff;
         border-radius: 0px 10px 10px 0px;
-        width: 100%;
         height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     button:hover {
@@ -168,9 +196,7 @@ export const Search = styled.form`
     }
 
     @media (max-height:1120px) {
-        a {
-            height: 49%;
-        }
+        min-width: 100px;
     }
 
 ` 

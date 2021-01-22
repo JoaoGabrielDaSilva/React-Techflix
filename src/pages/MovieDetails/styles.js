@@ -13,6 +13,7 @@ export const Main = styled.div`
 
 `
 export const LeftSide = styled.div`
+    height: 90%;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -28,7 +29,7 @@ export const LeftSide = styled.div`
 export const ImageContainer = styled.div`
     box-shadow: 0px 0px 15px #222;
     width: 300px;
-    height: 500px;
+    height: 70%;
     border: 1px solid #fff;
 
     img {

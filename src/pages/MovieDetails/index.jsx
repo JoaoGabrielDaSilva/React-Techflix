@@ -6,7 +6,9 @@ import DateHelper from '../Home/dateHelper'
 
 import { useParams, Link } from 'react-router-dom'
 
-const MovieDetails = React.FC = () => {
+import notFound from '../../Images/not_found.png'
+
+const MovieDetails = () => {
 
     function GetInfo() {
         const { id } = useParams()
@@ -17,10 +19,11 @@ const MovieDetails = React.FC = () => {
             
             axios.get(url)
             .then(response => {
+                console.log(response)
                 const info = {
                     id: response.data.id,
                     name: response.data.original_title || response.data.original_name,
-                    image: response.data.poster_path,
+                    image: response.data.poster_path ? `http://image.tmdb.org/t/p/w500${response.data.poster_path}` : notFound,
                     date: DateHelper(response.data.release_date || response.data.first_air_date),
                     note: response.data.vote_average,
                     description: response.data.overview
@@ -31,7 +34,7 @@ const MovieDetails = React.FC = () => {
             })
             .catch()
             
-        }, [])
+        }, [id])
         if (currentData) {
             return currentData
         }
@@ -43,7 +46,7 @@ const MovieDetails = React.FC = () => {
             <Main>
                 <LeftSide>
                     <ImageContainer>
-                        <img src={`http://image.tmdb.org/t/p/w500${request.image}`} alt=""/>
+                        <img src={`${request.image}`} alt=""/>
                     </ImageContainer>
                         <h5>{request.date}</h5>
                 </LeftSide>
