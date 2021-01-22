@@ -1,10 +1,9 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    height: 300px;
-    width: 175px;
+    height: 450px;
+    width: 300px;
     border: 1px solid #fff;
-    border-radius: 10px;
     margin: 15px;
     box-shadow: 0px 0px 15px #222;
     
@@ -22,20 +21,15 @@ export const Container = styled.div`
 `
 export const MovieImage = styled.div`
     height: 70%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 
     img {
         height: 100%;
         width: 100%;
-        border-radius: 10px;
     }
 `
 export const MovieInfo = styled.div`
     height: 30%;
     background: #fff;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;

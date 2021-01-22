@@ -9,8 +9,10 @@ import MoviesSearch from './pages/MoviesSearch'
 
 import GlobalStyles from './styles/GlobalStyles'
 
-function App() {
+function App(props) {
   
+  console.log(props)
+
   return (
     <BrowserRouter>
 

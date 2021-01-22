@@ -1,5 +1,9 @@
 export default function DateHelper(date) {
 
+    if (!date) {
+        return ''
+    }
+
     date = date.split('-')
     const months = [
         'Jan', 'Feb', 'Mar', 'Apr',

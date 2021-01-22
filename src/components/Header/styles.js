@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { FaBars } from "react-icons/fa"
+
 export const Container = styled.div`
     background: #222;
     display: flex;
@@ -7,9 +9,15 @@ export const Container = styled.div`
     height: 15vh;
     justify-content: space-between;
     width: 100%;
+    
 
     ul {
         margin-left: 10px; 
+    }
+
+    li {
+        width: 100%;
+        height: 100%;
     }
 
     ul:hover {
@@ -20,6 +28,12 @@ export const Container = styled.div`
     form {
         margin-right: 10px;
     }
+
+    @media (max-width: 1120px) {
+
+        flex-direction: column;
+    }
+
 `
 
 export const Logo = styled.div`
@@ -33,8 +47,32 @@ export const Logo = styled.div`
     img {
         height: 100%
     }
-
 `
+
+export const Menu = styled.div`
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+        
+    /* @media (max-width: 1120px) {
+
+        flex-direction: column;
+
+        ul, input {
+        position: absolute;
+        display: none;
+        } 
+
+        select {
+            display: initial;
+            margin-right: 20px;
+        }
+    } */
+`
+
 export const Movies = styled.ul`
     outline: none;
     height: 100%;
@@ -81,34 +119,46 @@ export const Trending = styled.ul`
 ` 
 export const Search = styled.form`
     padding-left: 30px;
-    border-radius: 10px;
-    height: 60%;
-    width: 30%;
+    height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    align-items: center;
 
     input {
-        width: 70%;
-        border-radius: 10px;
+        width: 30%;
+        border-radius: 10px 0px 0px 10px;
         outline: none;
-        height: 100%;
+        height: 40%;
         border: 1px solid #fff;
         padding: 10px;
         color: #fff;
     }
 
+    input:hover {
+        background: #2e2e2e;
+        cursor: pointer;
+    }
+
     a {
+        max-height: 58px;
         text-decoration: none;
-        width: 20%;
-        height: 100%;
+        width: 10%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     button {
         color: #fff;
         border: 1px solid #fff;
-        border-radius: 10px;
+        border-radius: 0px 10px 10px 0px;
         width: 100%;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     button:hover {
@@ -116,4 +166,13 @@ export const Search = styled.form`
         background: #fff;
         cursor: pointer;
     }
+
+    @media (max-height:1120px) {
+        a {
+            height: 49%;
+        }
+    }
+
 ` 
+
+

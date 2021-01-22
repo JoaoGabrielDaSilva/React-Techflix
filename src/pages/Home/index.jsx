@@ -7,7 +7,7 @@ import Card from '../../components/Card/index'
 
 import dateHelper from './dateHelper'
 
-const Home = React.FC = () => {
+const Home = () => {
 
     function FetchData() {
 
